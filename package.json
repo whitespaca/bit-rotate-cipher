@@ -1,7 +1,7 @@
 {
   "name": "bit-rotate-cipher",
   "version": "1.0.0",
-  "description": "A lightweight TypeScript library for encrypting/decrypting strings by bit-rotating based on uppercase letters in a key.",
+  "description": "Alphanumeric ciphertext via bit-rotation cipher",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

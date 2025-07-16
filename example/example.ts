@@ -1,10 +1,8 @@
 import { Cipher } from 'bit-rotate-cipher';
 
-const key = 'MySecretKEY';
-const message = 'Bit rotation encryption example';
+const { cipher, key } = Cipher.encrypt('HelloWorld');
+console.log('Cipher:', cipher);
+console.log('Key   :', key);
 
-const encrypted = Cipher.encrypt(message, key);
-console.log('Encrypted:', encrypted);
-
-const decrypted = Cipher.decrypt(encrypted, key);
-console.log('Decrypted:', decrypted);
+const original = Cipher.decrypt(cipher, key);
+console.log('Decoded:', original);
